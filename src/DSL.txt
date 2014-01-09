@@ -1,0 +1,20 @@
+define dimension "Product"
+define fact "Internet Sales"
+link "Internet Sales" to "Product"
+
+define dimension "Product SubCategory"
+define dimension "Product Category"
+snowflake "Product" to "Product SubCategory" and "Product Category"
+
+define dimension "Delivery"
+define dimension "Packaging"
+define dimension "Priority"
+define dimension "Volume"
+junk "Delivery" basedOn "Packaging" and "Priority" and "Volume"
+---------------------------------------------
+
+LINK FROM [Internet Sales] TO Product AND Promotion;
+BRIDGE FROM [Internet Sales] THROUGH [Internet Sales Reason] TO [Sales Reason];
+SNOWFLAKE FROM Product THROUGH [Product SubCategory] TO [Product Category];
+JUNK TO Delivery FROM Packaging AND Priority AND Volume;
+OUTRIGGER FROM [Sales Territory] TO Geography;
