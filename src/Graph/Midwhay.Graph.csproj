@@ -60,7 +60,7 @@
     <Compile Include="Properties\ProjectAssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dwhyter.Core\Midwhay.Core.csproj">
+    <ProjectReference Include="..\Core\Midwhay.Core.csproj">
       <Project>{461cac79-77c2-4ea7-8acb-4f32f3953357}</Project>
       <Name>Midwhay.Core</Name>
     </ProjectReference>
