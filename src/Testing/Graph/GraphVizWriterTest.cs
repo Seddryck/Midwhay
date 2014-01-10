@@ -53,8 +53,8 @@ namespace Midwhay.Testing.Graph
 
             writer.Save(viewport, text);
 
-            Assert.That(text.ToString(), Is.StringContaining("\"Internet Sales\" -> \"Product\";"));
-            Assert.That(text.ToString(), Is.StringContaining("\"Internet Sales\" -> \"Promotion\";"));
+            Assert.That(text.ToString(), Is.StringContaining("\"Internet Sales\" -> \"Product\""));
+            Assert.That(text.ToString(), Is.StringContaining("\"Internet Sales\" -> \"Promotion\""));
         }
     }
 }
