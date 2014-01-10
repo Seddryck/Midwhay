@@ -60,15 +60,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dwharf.Dsl\Midwhay.Dsl.csproj">
+    <ProjectReference Include="..\Domain Specific Language\Midwhay.Dsl.csproj">
       <Project>{4560620b-3db6-43a7-8a90-8f6f8592303f}</Project>
       <Name>Midwhay.Dsl</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dwhyter.Core\Midwhay.Core.csproj">
+    <ProjectReference Include="..\Core\Midwhay.Core.csproj">
       <Project>{461cac79-77c2-4ea7-8acb-4f32f3953357}</Project>
       <Name>Midwhay.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dwhyter.Graph\Midwhay.Graph.csproj">
+    <ProjectReference Include="..\Graph\Midwhay.Graph.csproj">
       <Project>{2b10e599-1c28-4eae-b553-9eb933097624}</Project>
       <Name>Midwhay.Graph</Name>
     </ProjectReference>
