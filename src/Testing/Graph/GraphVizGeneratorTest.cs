@@ -16,7 +16,7 @@ namespace Midwhay.Testing.Graph
     {
         private readonly string pathGraphviz = @"C:\Program Files (x86)\Graphviz2.34\bin\";
         private readonly string fileExtension = "svg";
-        private readonly bool openFile = true;
+        private readonly bool openFile = false;
 
         private string GetFileName()
         {
